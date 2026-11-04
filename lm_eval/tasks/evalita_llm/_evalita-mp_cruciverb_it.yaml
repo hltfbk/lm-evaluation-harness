@@ -1,0 +1,7 @@
+group: evalita-mp_cruciverb_it
+group_alias: cruciverb_it
+task:
+  - evalita-mp_cruciverb_it_task1
+  - evalita-mp_cruciverb_it_task2
+metadata:
+  version: 1

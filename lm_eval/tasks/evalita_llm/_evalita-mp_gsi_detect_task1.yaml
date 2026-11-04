@@ -1,0 +1,23 @@
+group: evalita-mp_gsi_detect_task1
+group_alias: task1
+task:
+  - evalita-mp_gsi_detect_task1_prompt-1
+  - evalita-mp_gsi_detect_task1_prompt-2
+aggregate_metric_list:
+  - metric: gsi_mse
+    aggregation: mean
+    weight_by_size: false
+  - metric: gsi_mse_score
+    aggregation: mean
+    weight_by_size: false
+  - metric: gsi_nmse
+    aggregation: mean
+    weight_by_size: false
+  - metric: gsi_nmse_score
+    aggregation: mean
+    weight_by_size: false
+  - metric: gsi_ccc
+    aggregation: mean
+    weight_by_size: false
+metadata:
+  version: 1

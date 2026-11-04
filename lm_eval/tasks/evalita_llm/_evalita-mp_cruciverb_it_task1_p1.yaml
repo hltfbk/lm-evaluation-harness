@@ -1,0 +1,13 @@
+include: _cruciverb_it_task1_template_yaml
+task: evalita-mp_cruciverb_it_task1_prompt-1
+task_alias: prompt-1
+doc_to_text: |-
+  Quale è la soluzione alla seguente definizione?
+
+  Definizione: "{{clue}}"
+
+  Lunghezza della soluzione: {{answer_length}} lettere.
+
+  Se incerto, puoi rispondere con una lista di candidati, dal più al meno probabile. Non aggiungere altro: rispondi soltanto con la soluzione o la lista di candidati.
+
+  Formato della risposta: candidato1, candidato2, candidato3

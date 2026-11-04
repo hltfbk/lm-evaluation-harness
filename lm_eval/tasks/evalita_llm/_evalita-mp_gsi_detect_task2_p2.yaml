@@ -1,0 +1,12 @@
+include: _gsi_detect_task2_template_yaml
+task: evalita-mp_gsi_detect_task2_prompt-2
+task_alias: prompt-2
+doc_to_text: |-
+  Devi svolgere un compito di classificazione degli stereotipi di genere.
+  Quale categoria di stereotipo di genere presenta il seguente testo?
+
+  Testo: {{Question}}
+
+  Le categorie possibili sono: role, personality, competence, physical, sexual, relational.
+  Rispondi esclusivamente con una categoria, senza aggiungere altro.
+  Risposta:

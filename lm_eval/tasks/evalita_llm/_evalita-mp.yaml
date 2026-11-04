@@ -11,6 +11,8 @@ task:
   - evalita-mp_ls
   - evalita-mp_ner_group
   - evalita-mp_re
+  - evalita-mp_cruciverb_it
+  - evalita-mp_gsi_detect
 aggregate_metric_list:
   - metric: acc
     weight_by_size: True

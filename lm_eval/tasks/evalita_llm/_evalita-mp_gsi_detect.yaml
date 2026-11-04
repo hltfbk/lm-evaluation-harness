@@ -1,0 +1,7 @@
+group: evalita-mp_gsi_detect
+group_alias: gsi_detect
+task:
+  - evalita-mp_gsi_detect_task1
+  - evalita-mp_gsi_detect_task2
+metadata:
+  version: 1

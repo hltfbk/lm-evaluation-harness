@@ -40,6 +40,8 @@ The following Evalita-LLM tasks can also be evaluated in isolation:
   - `evalita-mp_ls`: Lexical Substitution
   - `evalita-mp_ner_group`: Named Entity Recognition
   - `evalita-mp_re`: Relation Extraction
+  - `evalita-mp_cruciverb_it`: Italian crossword solving
+  - `evalita-mp_gsi_detect`: Gender stereotype detection and classification
 
 
 ### Usage

@@ -1,0 +1,7 @@
+include: _gsi_detect_task1_template_yaml
+task: evalita-mp_gsi_detect_task1_prompt-1
+task_alias: prompt-1
+doc_to_text: |-
+  Quale valore, da 0 a 1, indica il grado di stereotipo di genere presente nel seguente testo: '{{Question}}'
+  Rispondi esclusivamente con un numero nell'intervallo [0, 1] (estremi inclusi), senza aggiungere altro.
+  Risposta:

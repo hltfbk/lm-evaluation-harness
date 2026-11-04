@@ -1,0 +1,20 @@
+group: evalita-mp_cruciverb_it_task2
+group_alias: task2
+task:
+  - evalita-mp_cruciverb_it_task2_prompt-1
+  - evalita-mp_cruciverb_it_task2_prompt-2
+aggregate_metric_list:
+  - metric: word_acc
+    aggregation: mean
+    weight_by_size: false
+  - metric: char_acc
+    aggregation: mean
+    weight_by_size: false
+  - metric: full_match_accuracy
+    aggregation: mean
+    weight_by_size: false
+  - metric: word_acc_direct
+    aggregation: mean
+    weight_by_size: false
+metadata:
+  version: 1

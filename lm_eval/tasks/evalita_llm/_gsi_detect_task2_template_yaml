@@ -1,0 +1,28 @@
+dataset_path: evalitahf/gsi_detect
+dataset_kwargs:
+  revision: bb0315c1fe01eb13e7eb333aa43d9c3bf9b5bed8
+dataset_name: default
+test_split: test
+validation_split: dev
+fewshot_split: dev_fewshot
+fewshot_config:
+  sampler: first_n
+process_docs: !function gsi_utils.gsi_category_process_docs
+doc_to_target: !function gsi_utils.gsi_task2_doc_to_target
+process_results: !function gsi_utils.gsi_task2_process_results
+output_type: generate_until
+target_delimiter: " "
+generation_kwargs:
+  until:
+    - "</s>"
+  do_sample: false
+  max_gen_toks: 256
+metric_list:
+  - metric: gsi_f1_macro
+    aggregation: !function gsi_utils.aggregate_gsi_f1_macro
+    higher_is_better: true
+  - metric: gsi_f1_micro
+    aggregation: !function gsi_utils.aggregate_gsi_f1_micro
+    higher_is_better: true
+metadata:
+  version: 1

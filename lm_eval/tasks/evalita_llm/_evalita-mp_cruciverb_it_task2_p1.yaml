@@ -1,0 +1,4 @@
+include: _cruciverb_it_task2_template_yaml
+task: evalita-mp_cruciverb_it_task2_prompt-1
+task_alias: prompt-1
+doc_to_text: !function cruciverb_utils.cruciverb_task2_prompt1
